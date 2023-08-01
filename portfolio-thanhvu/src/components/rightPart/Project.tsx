@@ -37,7 +37,7 @@ export interface IProjectList {
   projectDes: string
   projectGithub?: string
   projectBulletPoint?: string[]
-  projectImage?: object[]
+  projectImage?: { original: string }[]
   projectDate?: string
 }
 

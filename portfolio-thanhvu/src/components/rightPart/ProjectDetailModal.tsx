@@ -18,7 +18,6 @@ const ProjectDetailModal = (props: IProjectDetailModal) => {
   useEffect(() => {
     if (project?.projectImage) {
       let projectImage = project.projectImage
-      console.log(projectImage)
       setProjectImage(projectImage)
     } else {
       setProjectImage([])
