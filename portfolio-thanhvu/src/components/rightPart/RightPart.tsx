@@ -6,13 +6,22 @@ import ContactAndFooter from './ContactAndFooter'
 
 interface IRightPart {
   openLeftPart: boolean
+  mobileMode: boolean
   setOpenLeftPart: (value: boolean) => void
 }
 
 const RightPart = (props: IRightPart) => {
-  const { openLeftPart } = props
+  const { openLeftPart, mobileMode } = props
   return (
     <div
+      // className={
+      //   mobileMode === false
+      //     ? openLeftPart === true
+      //       ? 'arlo_tm_rightpart'
+      //       : 'arlo_tm_rightpart opened'
+      //     : 'arlo_tm_rightpart full'
+      // }
+
       className={
         openLeftPart === true ? 'arlo_tm_rightpart' : 'arlo_tm_rightpart opened'
       }

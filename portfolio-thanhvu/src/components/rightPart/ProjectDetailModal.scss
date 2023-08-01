@@ -1,0 +1,259 @@
+.project-modal {
+  .project-detail-wrapper {
+    display: flex;
+    gap: 20px;
+
+    .project-image {
+      width: 100%;
+      padding: 0px !important;
+    }
+    .project-information {
+      line-height: 30px;
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        .project-name {
+          font-family: 'Montserrat';
+          font-weight: 600;
+          color: #000000;
+          line-height: 1;
+          font-size: 18px;
+        }
+        .project-date {
+          font-family: 'Open Sans';
+          color: #000000;
+          line-height: 1;
+          font-size: 16px;
+        }
+      }
+
+      .project-github {
+        font-family: 'Open Sans';
+        color: #000000;
+      }
+
+      .project-bullet-point {
+        padding: 0 20px;
+        p {
+          font-family: 'Open Sans';
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.image-gallery-svg {
+  width: 30px !important;
+}
+.image-gallery-image {
+  max-height: 800px !important;
+}
+
+@media only screen and (min-width: 2200) {
+  .image-gallery-image {
+    max-height: 800px !important;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2199px) {
+  .image-gallery-image {
+    max-height: 610px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .project-modal {
+    width: 80vw !important;
+    top: 50px !important;
+
+    .ant-modal-body {
+      height: 800px;
+      overflow-x: hidden;
+    }
+    .project-detail-wrapper {
+      display: flex;
+
+      .project-information {
+        margin-top: 20px;
+        order: 1;
+      }
+      .project-image {
+        margin-top: 20px;
+        order: 2;
+      }
+    }
+  }
+
+  .image-gallery-image {
+    max-height: 610px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .project-modal {
+    width: 80vw !important;
+    top: 100px !important;
+
+    .ant-modal-body {
+      height: 800px;
+      overflow-x: hidden;
+    }
+
+    .project-detail-wrapper {
+      display: flex;
+
+      .project-information {
+        margin-top: 20px;
+        order: 1;
+      }
+      .project-image {
+        margin-top: 10px;
+        order: 2;
+      }
+    }
+  }
+
+  .image-gallery-image {
+    max-height: 625px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-modal {
+    width: 80vw !important;
+    top: 100px !important;
+
+    .ant-modal-body {
+      height: 600px;
+      overflow-x: hidden;
+    }
+
+    .project-detail-wrapper {
+      display: flex;
+
+      .project-information {
+        margin-top: 20px;
+        order: 1;
+      }
+      .project-image {
+        margin-top: 10px;
+        order: 2;
+      }
+    }
+  }
+
+  .image-gallery-image {
+    max-height: 480px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .project-modal {
+    width: 90vw !important;
+    top: 100px !important;
+
+    .ant-modal-body {
+      height: 600px;
+      overflow-x: hidden;
+    }
+    .project-detail-wrapper {
+      display: flex;
+
+      .project-information {
+        margin-top: 20px;
+        order: 1;
+
+        .project-header {
+          .project-date {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .project-image {
+        margin-top: 10px;
+        order: 2;
+      }
+    }
+  }
+
+  .image-gallery-image {
+    max-height: 400px !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  .project-modal {
+    width: 90vw !important;
+    top: 100px !important;
+
+    .ant-modal-body {
+      height: 600px;
+      overflow-x: hidden;
+    }
+
+    .project-detail-wrapper {
+      display: flex;
+
+      .project-information {
+        margin-top: 20px;
+        order: 1;
+
+        .project-header {
+          .project-date {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .project-image {
+        margin-top: 10px;
+        order: 2;
+      }
+    }
+  }
+
+  .image-gallery-image {
+    max-height: 330px !important;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .project-modal {
+    width: 90vw !important;
+    overflow: auto;
+    top: 100px !important;
+
+    .ant-modal-body {
+      height: 600px;
+      overflow-x: hidden;
+    }
+
+    .project-detail-wrapper {
+      display: flex;
+
+      .project-information {
+        margin-top: 20px;
+        order: 1;
+
+        .project-header {
+          .project-date {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .project-image {
+        margin-top: 10px;
+        order: 2;
+      }
+    }
+  }
+
+  .image-gallery-image {
+    max-height: 250px !important;
+  }
+}

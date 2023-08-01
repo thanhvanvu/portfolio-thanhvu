@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactAndFooter = () => {
   return (
-    <div className="arlo_tm_section" id="contact">
+    <div className="arlo_tm_section contact-and-footer" id="contact">
       <div className="container">
         <div className="arlo_tm_title_holder contact">
           <h3>Contact Me</h3>

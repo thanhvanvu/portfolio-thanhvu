@@ -1,8 +1,26 @@
 import aboutAvatar from '@/assets/img/about/thanhvu.png'
+import imageLayer from '@/assets/img/about/550x640.jpg'
 import resume from '@/assets/resume.pdf'
+import Parallax from 'parallax-js'
 import { TypeAnimation } from 'react-type-animation'
+import { useRef, useEffect } from 'react'
+import { isMobile } from 'react-device-detect'
 
 const About = () => {
+  const sceneEl = useRef(null)
+
+  useEffect(() => {
+    if (sceneEl && sceneEl.current) {
+      const parallaxInstance = new Parallax(sceneEl.current, {
+        relativeInput: true,
+        hoverOnly: true,
+      })
+
+      parallaxInstance.enable()
+
+      return () => parallaxInstance.disable()
+    }
+  }, [])
   return (
     <div className="arlo_tm_section relative" id="about">
       <div className="arlo_tm_about_wrapper_all">
@@ -17,36 +35,43 @@ const About = () => {
                 <div
                   className="about_image_wrap parallax"
                   data-relative-input="true"
+                  ref={sceneEl}
                 >
-                  <div className="image layer" data-depth="0.1">
-                    <img src="img/about/550x640.jpg" alt="550x640" />
-                    <div className="inner" data-img-url={aboutAvatar}></div>
+                  <div className="image layer" data-depth="0.4">
+                    <img src={imageLayer} alt="550x640" />
+                    <div
+                      className="inner"
+                      style={{ backgroundImage: `url(${aboutAvatar})` }}
+                    ></div>
                   </div>
-                  <div className="border layer" data-depth="0.2">
-                    <img src="img/about/550x640.jpg" alt="550x640" />
+                  <div className="border layer" data-depth="0.6">
+                    <img src={imageLayer} alt="550x640" />
                     <div className="inner"></div>
                   </div>
                 </div>
               </div>
               <div className="rightbox">
-                <div className="arlo_tm_mini_title_holder">
-                  <h4>
-                    I'm Thanh Vu,&nbsp;
-                    <span className="arlo_tm_animation_text_word">
-                      <TypeAnimation
-                        sequence={[
-                          'a driven recent graduate',
-                          1000,
-                          'an aspiring Web Developer',
-                          1000,
-                        ]}
-                        wrapper="span"
-                        speed={40}
-                        repeat={Infinity}
-                      />
-                    </span>
-                  </h4>
-                </div>
+                {!isMobile && (
+                  <div className="arlo_tm_mini_title_holder">
+                    <h4>
+                      I'm Thanh Vu,&nbsp;
+                      <span className="arlo_tm_animation_text_word">
+                        <TypeAnimation
+                          sequence={[
+                            'a driven recent graduate',
+                            1000,
+                            'an aspiring Web Developer',
+                            1000,
+                          ]}
+                          wrapper="span"
+                          speed={40}
+                          repeat={Infinity}
+                        />
+                      </span>
+                    </h4>
+                  </div>
+                )}
+
                 <div className="definition">
                   <p>
                     Hello! My name is <strong>Thanh Vu</strong>, and I am a

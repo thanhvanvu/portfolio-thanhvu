@@ -1,13 +1,21 @@
 import React from 'react'
 
-const Preloader = () => {
+interface IPreloader {
+  preloader: boolean
+}
+
+const Preloader = (props: IPreloader) => {
+  const { preloader } = props
   return (
-    // <div className="arlo_tm_preloader">
-    //   <div className="spinner_wrap">
-    //     <div className="spinner"></div>
-    //   </div>
-    // </div>
-    <></>
+    <div
+      className={
+        preloader === true ? 'arlo_tm_preloader' : 'arlo_tm_preloader loaded'
+      }
+    >
+      <div className="spinner_wrap">
+        <div className="spinner"></div>
+      </div>
+    </div>
   )
 }
 
