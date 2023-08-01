@@ -9,7 +9,7 @@ const Preloader = (props: IPreloader) => {
   return (
     <div
       className={
-        preloader === true ? 'arlo_tm_preloader' : 'arlo_tm_preloader loaded'
+        preloader === true ? 'tv_tm_preloader' : 'tv_tm_preloader loaded'
       }
     >
       <div className="spinner_wrap">

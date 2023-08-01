@@ -40,8 +40,8 @@ const LeftPart = (props: ILeftPart) => {
     <div
       className={
         openLeftPart === true
-          ? 'arlo_tm_leftpart_wrap'
-          : 'arlo_tm_leftpart_wrap opened'
+          ? 'tv_tm_leftpart_wrap'
+          : 'tv_tm_leftpart_wrap opened'
       }
     >
       <div className="leftpart_inner">
@@ -137,7 +137,7 @@ const LeftPart = (props: ILeftPart) => {
         {!isMobile && (
           <a
             className={
-              openLeftPart === true ? 'arlo_tm_resize' : 'arlo_tm_resize opened'
+              openLeftPart === true ? 'tv_tm_resize' : 'tv_tm_resize opened'
             }
             href="#"
             onClick={(e) => {

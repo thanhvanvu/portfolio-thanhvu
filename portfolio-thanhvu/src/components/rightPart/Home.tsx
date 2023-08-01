@@ -9,9 +9,9 @@ const Home = () => {
     }
   }
   return (
-    <div className="arlo_tm_section" id="home">
-      <div className="arlo_tm_hero_header_wrap">
-        <div className="arlo_tm_universal_box_wrap">
+    <div className="tv_tm_section" id="home">
+      <div className="tv_tm_hero_header_wrap">
+        <div className="tv_tm_universal_box_wrap">
           <div className="bg_wrap">
             <div className="overlay_image hero jarallax" data-speed="0.1"></div>
             <div className="overlay_color hero"></div>
@@ -29,7 +29,7 @@ const Home = () => {
               <div className="text_typing">
                 <p>
                   I am&nbsp;
-                  <span className="arlo_tm_animation_text_word">
+                  <span className="tv_tm_animation_text_word">
                     <TypeAnimation
                       sequence={[
                         'a driven recent graduate',
@@ -46,7 +46,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="arlo_tm_arrow_wrap bounce anchor">
+          <div className="tv_tm_arrow_wrap bounce anchor">
             <a
               href="#"
               onClick={(event) => {

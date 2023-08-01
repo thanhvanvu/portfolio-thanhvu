@@ -17,13 +17,13 @@ const RightPart = (props: IRightPart) => {
       // className={
       //   mobileMode === false
       //     ? openLeftPart === true
-      //       ? 'arlo_tm_rightpart'
-      //       : 'arlo_tm_rightpart opened'
-      //     : 'arlo_tm_rightpart full'
+      //       ? 'tv_tm_rightpart'
+      //       : 'tv_tm_rightpart opened'
+      //     : 'tv_tm_rightpart full'
       // }
 
       className={
-        openLeftPart === true ? 'arlo_tm_rightpart' : 'arlo_tm_rightpart opened'
+        openLeftPart === true ? 'tv_tm_rightpart' : 'tv_tm_rightpart opened'
       }
     >
       <div className="rightpart_inner">

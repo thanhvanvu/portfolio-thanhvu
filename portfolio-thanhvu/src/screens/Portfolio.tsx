@@ -27,8 +27,8 @@ const Portfolio = () => {
   }, [])
 
   return (
-    <div className="arlo_tm_wrapper_all">
-      <div id="arlo_tm_popup_blog">
+    <div className="tv_tm_wrapper_all">
+      <div id="tv_tm_popup_blog">
         <div className="container">
           <div className="inner_popup scrollable"></div>
         </div>
@@ -44,7 +44,7 @@ const Portfolio = () => {
       <MobileMenu />
 
       {/* <!-- CONTENT --> */}
-      <div className="arlo_tm_content">
+      <div className="tv_tm_content">
         {/* <!-- LEFTPART --> */}
         <LeftPart
           openLeftPart={openLeftPart}

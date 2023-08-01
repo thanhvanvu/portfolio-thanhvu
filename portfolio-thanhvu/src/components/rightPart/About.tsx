@@ -22,14 +22,14 @@ const About = () => {
     }
   }, [])
   return (
-    <div className="arlo_tm_section relative" id="about">
-      <div className="arlo_tm_about_wrapper_all">
+    <div className="tv_tm_section relative" id="about">
+      <div className="tv_tm_about_wrapper_all">
         <div className="container">
-          <div className="arlo_tm_title_holder">
+          <div className="tv_tm_title_holder">
             <h3>About Me</h3>
             <span>Main informations about me</span>
           </div>
-          <div className="arlo_tm_about_wrap">
+          <div className="tv_tm_about_wrap">
             <div className="author_wrap">
               <div className="leftbox">
                 <div
@@ -52,10 +52,10 @@ const About = () => {
               </div>
               <div className="rightbox">
                 {!isMobile && (
-                  <div className="arlo_tm_mini_title_holder">
+                  <div className="tv_tm_mini_title_holder">
                     <h4>
                       I'm Thanh Vu,&nbsp;
-                      <span className="arlo_tm_animation_text_word">
+                      <span className="tv_tm_animation_text_word">
                         <TypeAnimation
                           sequence={[
                             'a driven recent graduate',
@@ -97,16 +97,6 @@ const About = () => {
                   <ul>
                     <li>
                       <span>
-                        <label>Birthday:</label> 09.04.1994
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        <label>Gender:</label> Male
-                      </span>
-                    </li>
-                    <li>
-                      <span>
                         <label>Study:</label> University of Houston
                       </span>
                     </li>
@@ -123,11 +113,12 @@ const About = () => {
                     <li>
                       <span>
                         <label>Github:</label>
-                        <a href="https://github.com/vvt4994" target="_blank">
-                          https://github.com/vvt4994
+                        <a href="https://github.com/thanhvanvu" target="_blank">
+                          github.com/thanhvanvu
                         </a>
                       </span>
                     </li>
+
                     <li>
                       <span>
                         <label>Mail:</label>
@@ -136,15 +127,14 @@ const About = () => {
                         </a>
                       </span>
                     </li>
-
                     <li>
                       <span>
-                        <label>Facebook:</label>
+                        <label>LinkedIn:</label>
                         <a
-                          href="https://www.facebook.com/profile.php?id=100005056689985"
+                          href="https://www.linkedin.com/in/thanh-vu-768629285/"
                           target="_blank"
                         >
-                          &#64;ThanhVu
+                          linkedin.com/thanhvanvu
                         </a>
                       </span>
                     </li>

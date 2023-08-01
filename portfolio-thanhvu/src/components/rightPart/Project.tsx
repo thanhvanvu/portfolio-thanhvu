@@ -172,10 +172,10 @@ const Project = () => {
   }
 
   return (
-    <div className="arlo_tm_section" id="projects">
-      <div className="arlo_tm_projects_wrap">
+    <div className="tv_tm_section" id="projects">
+      <div className="tv_tm_projects_wrap">
         <div className="container">
-          <div className="arlo_tm_title_holder">
+          <div className="tv_tm_title_holder">
             <h3>Amazing Projects</h3>
             <span>All my completed projects </span>
           </div>

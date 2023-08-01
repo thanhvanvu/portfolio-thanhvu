@@ -22,7 +22,7 @@ const MobileMenu = () => {
     display: 'block',
   }
   return (
-    <div className="arlo_tm_mobile_header_wrap">
+    <div className="tv_tm_mobile_header_wrap">
       <div className="main_wrap">
         <div className="logo">
           <a href="index.html">
@@ -30,7 +30,7 @@ const MobileMenu = () => {
             <img src={mobileLogo} alt="mobile_logo" />
           </a>
         </div>
-        <div className="arlo_tm_trigger" onClick={() => setOpenMenu(!openMenu)}>
+        <div className="tv_tm_trigger" onClick={() => setOpenMenu(!openMenu)}>
           <div
             className={
               openMenu === false
@@ -44,7 +44,7 @@ const MobileMenu = () => {
           </div>
         </div>
       </div>
-      <div className="arlo_tm_mobile_menu_wrap" style={style}>
+      <div className="tv_tm_mobile_menu_wrap" style={style}>
         <div className="mob_menu">
           <ul className="anchor_nav">
             <li>
