@@ -1,0 +1,90 @@
+@media only screen and (min-width: 2200px) {
+  .image-to-show {
+    width: 70vw !important;
+    top: 20px;
+
+    .ant-modal-header {
+      margin-bottom: 15px !important;
+    }
+
+    .image-gallery-image {
+      max-height: 82vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2199px) {
+  .image-to-show {
+    width: 80vw !important;
+    top: 20px;
+
+    .image-gallery-image {
+      max-height: 82vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .image-to-show {
+    width: 90vw !important;
+    top: 20px;
+
+    .image-gallery-image {
+      max-height: 70vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-to-show {
+    width: 99vw !important;
+    top: 20%;
+
+    .image-gallery-image {
+      max-height: 80vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-to-show {
+    width: 99vw !important;
+    top: 20%;
+
+    .image-gallery-image {
+      max-height: 100vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .image-to-show {
+    width: 99vw !important;
+    top: 20%;
+
+    .image-gallery-image {
+      max-height: 100vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  .image-to-show {
+    width: 100vw !important;
+    top: 20%;
+
+    .image-gallery-image {
+      max-height: 100vh !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .image-to-show {
+    width: 100vw !important;
+    top: 20%;
+    .image-gallery-image {
+      max-height: 100vh !important;
+    }
+  }
+}

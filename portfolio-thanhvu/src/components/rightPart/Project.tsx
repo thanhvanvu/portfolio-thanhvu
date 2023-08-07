@@ -37,8 +37,9 @@ export interface IProjectList {
   projectDes: string
   projectGithub?: string
   projectBulletPoint?: string[]
-  projectImage?: { original: string }[]
+  projectImage?: { original: string; thumbnail: string }[]
   projectDate?: string
+  projectDemo?: string
 }
 
 const projectList: IProjectList[] = [
@@ -46,36 +47,46 @@ const projectList: IProjectList[] = [
     projectLogo: healthCare,
     projectName: 'HealthCare',
     projectDes:
-      'The healthcare consultancy project allows users to access comprehensive information about clinics and doctors in a network...',
-    projectGithub: 'https://github.com/vvt4994/clinic-booking',
+      'The healthcare consultancy project allows users to access comprehensive information about clinics and doctors in a network. Users can easily browse and select their preferred doctor, facilitating a convenient appointment booking process for enhanced healthcare accessibility.',
+    projectGithub: 'https://github.com/thanhvanvu/clinic-booking',
+    projectDemo: 'https://healthcaretv.bio',
     projectDate: 'Jan 2023 - May 2023',
     projectImage: [
       {
         original: healthcare1,
+        thumbnail: healthcare1,
       },
       {
         original: healthcare2,
+        thumbnail: healthcare2,
       },
       {
         original: healthcare3,
+        thumbnail: healthcare3,
       },
       {
         original: healthcare4,
+        thumbnail: healthcare4,
       },
       {
         original: healthcare5,
+        thumbnail: healthcare5,
       },
       {
         original: healthcare6,
+        thumbnail: healthcare6,
       },
       {
         original: healthcare7,
+        thumbnail: healthcare7,
       },
       {
         original: healthcare8,
+        thumbnail: healthcare8,
       },
       {
         original: healthcare9,
+        thumbnail: healthcare9,
       },
     ],
     projectBulletPoint: [
@@ -85,7 +96,7 @@ const projectList: IProjectList[] = [
       'Implemented an automated email system using Nodemailer to send appointment details and confirmation links to patients, resulting in a 70% reduction in fake bookings and a 30% increase in patient satisfaction with 1-click confirmation.',
       'Utilized Google Maps API for clinic/hospital locations, reducing map load time by 90% and improving patient engagement by 15%.',
       'Ensured a seamless user experience across devices with a responsive web design, resulting in a 10% increase in website traffic and a 5% increase in conversion rate.',
-      'Developed a scalable back-end handling over 30 different API endpoints, enhancing performance and accommodating increased traffic and patient load by 20%.',
+      'Developed a back-end handling over 30 different API endpoints, enhancing performance and accommodating increased traffic and patient load by 20%.',
       'Utilized ORM (Object Relational Mapping) to streamline data sharing between 10 database tables by 50%, simplifying code maintenance.',
       'Implemented the MVC architectural pattern to enhance code maintainability by 20%.',
     ],
@@ -94,24 +105,30 @@ const projectList: IProjectList[] = [
     projectLogo: bookStore,
     projectName: 'Book Store',
     projectDes:
-      ' The book store project is a platform where users can browse and order books. With a wide range of books available for exploration and a seamless ordering process...',
-    projectGithub: 'https://github.com/vvt4994/book-store-fe',
+      'The book store project is a platform where users can browse and order books. With a wide range of books available for exploration and a seamless ordering process, this project aims to provide users with a comprehensive and user-friendly book shopping experience.',
+    projectGithub: 'https://github.com/thanhvanvu/book-store-fe',
+    projectDemo: 'https://bookstoretv.shop',
     projectDate: 'May 2023 - July 2023',
     projectImage: [
       {
         original: bookstore1,
+        thumbnail: bookstore1,
       },
       {
         original: bookstore2,
+        thumbnail: bookstore2,
       },
       {
         original: bookstore3,
+        thumbnail: bookstore3,
       },
       {
         original: bookstore4,
+        thumbnail: bookstore4,
       },
       {
         original: bookstore5,
+        thumbnail: bookstore5,
       },
     ],
     projectBulletPoint: [
@@ -128,27 +145,33 @@ const projectList: IProjectList[] = [
     projectLogo: rou,
     projectName: 'Fuel Quote',
     projectDes:
-      'The fuel quote estimation project provides users with quick and accurate estimates of fuel costs based on their location. By considering variables such as order histories...',
-    projectGithub: 'https://github.com/vvt4994/Fuel-Quote-Project',
+      'The fuel quote estimation project provides users with quick and accurate estimates of fuel costs based on their location. By considering variables such as order histories, the number of orders a user has made, users can make informed decisions about budgeting for their travel expenses.',
+    projectGithub: 'https://github.com/thanhvanvu/Fuel-Quote-Project',
     projectDate: 'March 2022 - May 2022',
     projectImage: [
       {
         original: fuelquote1,
+        thumbnail: fuelquote1,
       },
       {
         original: fuelquote2,
+        thumbnail: fuelquote2,
       },
       {
         original: fuelquote3,
+        thumbnail: fuelquote3,
       },
       {
         original: fuelquote4,
+        thumbnail: fuelquote4,
       },
       {
         original: fuelquote5,
+        thumbnail: fuelquote5,
       },
       {
         original: fuelquote6,
+        thumbnail: fuelquote6,
       },
     ],
     projectBulletPoint: [

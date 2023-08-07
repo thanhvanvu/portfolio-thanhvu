@@ -120,13 +120,16 @@ const LeftPart = (props: ILeftPart) => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/thanh-vu-768629285/"
+                  target="_blank"
+                >
                   <FaLinkedinIn />
                 </a>
               </li>
 
               <li>
-                <a href="https://github.com/vvt4994" target="_blank">
+                <a href="https://github.com/thanhvanvu" target="_blank">
                   <FaGithub />
                 </a>
               </li>

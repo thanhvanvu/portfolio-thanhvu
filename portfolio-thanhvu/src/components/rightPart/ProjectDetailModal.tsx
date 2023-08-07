@@ -3,7 +3,8 @@ import { IProjectList } from './Project'
 import '@/components/rightPart/ProjectDetailModal.scss'
 import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery'
 import 'react-image-gallery/styles/scss/image-gallery.scss'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import ProjectImageToShow from './ProjectImageToShow'
 
 interface IProjectDetailModal {
   project: IProjectList | null
@@ -14,6 +15,11 @@ interface IProjectDetailModal {
 const ProjectDetailModal = (props: IProjectDetailModal) => {
   const { project, isOpenProjectModal, setIsOpenProjectModal } = props
   const [projectImage, setProjectImage] = useState<ReactImageGalleryItem[]>([])
+  const [openImageToShow, setOpenImageToShow] = useState<boolean>(false)
+  const [currentImageToShow, setCurrentImageToShow] = useState<
+    number | undefined
+  >(undefined)
+  const refGallery = useRef<ImageGallery>(null)
 
   useEffect(() => {
     if (project?.projectImage) {
@@ -24,6 +30,14 @@ const ProjectDetailModal = (props: IProjectDetailModal) => {
     }
   }, [project])
 
+  const handleShowImage = () => {
+    if (refGallery.current) {
+      const imageIndex = refGallery.current.getCurrentIndex()
+      setOpenImageToShow(true)
+      setCurrentImageToShow(imageIndex)
+    }
+  }
+
   return (
     <Modal
       className="project-modal"
@@ -33,13 +47,23 @@ const ProjectDetailModal = (props: IProjectDetailModal) => {
       width="80vw"
       footer={false}
     >
+      <ProjectImageToShow
+        setOpenImageToShow={setOpenImageToShow}
+        openImageToShow={openImageToShow}
+        currentImageToShow={currentImageToShow}
+        projectImage={projectImage}
+        projectName={project?.projectName}
+      />
+
       <Row gutter={[8, 8]} className="project-detail-wrapper">
         <Col xxl={13} xl={24} className="project-image">
           <ImageGallery
+            ref={refGallery}
             items={projectImage}
-            showFullscreenButton={false}
+            showFullscreenButton={true}
             showPlayButton={false}
             showThumbnails={false}
+            onClick={handleShowImage}
           />
         </Col>
         <Col xxl={10} xl={24} className="project-information">
@@ -49,18 +73,30 @@ const ProjectDetailModal = (props: IProjectDetailModal) => {
           </div>
 
           <div className="project-github">
+            <span>GitHub: </span>
             <a href={project?.projectGithub} target="_blank">
-              {project?.projectGithub}
+              {project?.projectGithub?.replace('https://github.com/', '')}
             </a>
+          </div>
+          <div className="project-demo">
+            {project?.projectDemo === undefined ? (
+              <></>
+            ) : (
+              <>
+                <span>Demo: </span>
+                <a href={project?.projectDemo} target="_blank">
+                  {project?.projectDemo.replace('https://', '')}
+                </a>
+              </>
+            )}
           </div>
           <div className="project-bullet-point">
             <ul>
               {project &&
                 project.projectBulletPoint &&
                 project.projectBulletPoint.map((point, index) => {
-                  console.log(point)
                   return (
-                    <li>
+                    <li key={index}>
                       <p>{point}</p>
                     </li>
                   )
