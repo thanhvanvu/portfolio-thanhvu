@@ -1396,6 +1396,8 @@ img.svg {
         box-sizing: border-box;
 
         .inner {
+          overflow: auto;
+          position: relative;
           cursor: pointer;
           width: 100%;
           min-height: 380px;
@@ -1452,6 +1454,12 @@ img.svg {
             color: $color_7;
             line-height: 1;
           }
+        }
+
+        .readmore {
+          position: absolute;
+          bottom: 30px;
+          color: blue;
         }
       }
     }

@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation'
-import avatar from '@/assets/img/hero/thanhvu.jpg'
+import avatar from '@/assets/img/hero/avatar-thanhvu.png'
 
 const Home = () => {
   const handleScrollFromHome = () => {

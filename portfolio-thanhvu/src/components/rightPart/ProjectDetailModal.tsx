@@ -90,6 +90,18 @@ const ProjectDetailModal = (props: IProjectDetailModal) => {
               </>
             )}
           </div>
+          <div className="project-description">
+            <p>
+              <span>Description: </span>
+              {project?.projectFullDes}
+            </p>
+          </div>
+          <div className="project-technologies">
+            <p>
+              <span>Technologies: </span>
+              {project?.projectTechnologies}
+            </p>
+          </div>
           <div className="project-bullet-point">
             <ul>
               {project &&

@@ -1,6 +1,6 @@
 import aboutAvatar from '@/assets/img/about/thanhvu.png'
 import imageLayer from '@/assets/img/about/550x640.jpg'
-import resume from '@/assets/resume.pdf'
+import resume from '@/assets/thanhvu-resume.pdf'
 import Parallax from 'parallax-js'
 import { TypeAnimation } from 'react-type-animation'
 import { useRef, useEffect } from 'react'
@@ -79,7 +79,7 @@ const About = () => {
                     University of Houston with a major in Computer Science,
                     focusing on web development. I am currently actively
                     pursuing full-time opportunities in the field of web
-                    development.
+                    development, software engineer.
                   </p>
                   <br />
                   <p>
@@ -144,7 +144,7 @@ const About = () => {
                   <ul>
                     <li>
                       <a href={resume} download>
-                        <span>Download CV</span>
+                        <span>Download Resume</span>
                       </a>
                     </li>
                   </ul>

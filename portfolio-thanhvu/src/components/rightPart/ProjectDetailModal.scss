@@ -1,5 +1,6 @@
 .project-modal {
   z-index: 100000;
+  width: 80vw !important;
 
   .ant-modal-body {
     overflow-x: hidden;
@@ -57,6 +58,22 @@
         color: #000000;
       }
 
+      .project-description {
+        span {
+          font-weight: bold;
+        }
+        font-family: 'Open Sans';
+        color: #000000;
+      }
+
+      .project-technologies {
+        span {
+          font-weight: bold;
+        }
+        font-family: 'Open Sans';
+        color: #000000;
+      }
+
       .project-bullet-point {
         padding: 0 20px;
         p {
@@ -69,24 +86,29 @@
 }
 
 @media only screen and (min-width: 2200px) {
-  .project-detail-wrapper {
-    .image-gallery-image {
-      max-height: 800px !important;
+  .project-modal {
+    .project-detail-wrapper {
+      .image-gallery-image {
+        max-height: 800px !important;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 2199px) {
-  .project-detail-wrapper {
-    .image-gallery-image {
-      max-height: 610px !important;
+  .project-modal {
+    width: 90vw !important;
+    .project-detail-wrapper {
+      .image-gallery-image {
+        max-height: 800px !important;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .project-modal {
-    width: 80vw !important;
+    width: 90vw !important;
     top: 50px !important;
 
     // .ant-modal-body {
@@ -113,7 +135,7 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .project-modal {
-    width: 80vw !important;
+    width: 90vw !important;
     top: 100px !important;
 
     // .ant-modal-body {
@@ -142,7 +164,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .project-modal {
-    width: 80vw !important;
+    width: 90vw !important;
     top: 100px !important;
 
     // .ant-modal-body {

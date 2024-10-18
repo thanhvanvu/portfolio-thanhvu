@@ -35,7 +35,9 @@ export interface IProjectList {
   projectLogo: string
   projectName: string
   projectDes: string
+  projectFullDes?: string
   projectGithub?: string
+  projectTechnologies?: string
   projectBulletPoint?: string[]
   projectImage?: { original: string; thumbnail: string }[]
   projectDate?: string
@@ -45,10 +47,14 @@ export interface IProjectList {
 const projectList: IProjectList[] = [
   {
     projectLogo: healthCare,
-    projectName: 'HealthCare',
+    projectName: 'HealthCare Consultancy',
     projectDes:
-      'The healthcare consultancy project allows users to access comprehensive information about clinics and doctors in a network. Users can easily browse and select their preferred doctor, facilitating a convenient appointment booking process for enhanced healthcare accessibility.',
+      'The healthcare consultancy project allows users to access comprehensive information about clinics and doctors in a network...',
+    projectFullDes:
+      'The healthcare consultancy project enables users to access detailed clinic and doctor information. This simplifies the process of selecting preferred doctors and booking appointments, thus improving healthcare accessibility.',
     projectGithub: 'https://github.com/thanhvanvu/clinic-booking',
+    projectTechnologies:
+      'HTML5, SCSS (Sass), Javascript, ReactJS, Bootstrap, Redux, NodeJS, ExpressJS, MySQL.',
     projectDemo: 'https://healthcaretv.bio',
     projectDate: 'Jan 2023 - May 2023',
     projectImage: [
@@ -105,8 +111,12 @@ const projectList: IProjectList[] = [
     projectLogo: bookStore,
     projectName: 'Book Store',
     projectDes:
-      'The book store project is a platform where users can browse and order books. With a wide range of books available for exploration and a seamless ordering process, this project aims to provide users with a comprehensive and user-friendly book shopping experience.',
+      'The book store project is a platform where users can browse and order books. With a wide range of books available for exploration...',
+    projectFullDes:
+      'The book store project offers users the ability to explore and purchase books effortlessly. Featuring an extensive book selection and a smooth ordering process, the project strives to deliver a comprehensive and user-centric book shopping journey.',
     projectGithub: 'https://github.com/thanhvanvu/book-store-fe',
+    projectTechnologies:
+      'HTML5, SCSS (Sass), Javascript, ReactJS, Vite, Ant Design, Redux Toolkit, NestJS, MongoDB.',
     projectDemo: 'https://bookstoretv.shop',
     projectDate: 'May 2023 - July 2023',
     projectImage: [
@@ -145,8 +155,11 @@ const projectList: IProjectList[] = [
     projectLogo: rou,
     projectName: 'Fuel Quote',
     projectDes:
-      'The fuel quote estimation project provides users with quick and accurate estimates of fuel costs based on their location. By considering variables such as order histories, the number of orders a user has made, users can make informed decisions about budgeting for their travel expenses.',
+      'The fuel quote estimation project provides users with quick and accurate estimates of fuel costs based on their location...',
+    projectFullDes:
+      'The fuel quote estimation project delivers swift and precise fuel cost estimates to users based on their location. By factoring in variables like order history and frequency, users can make well-informed decisions regarding their travel budgeting.',
     projectGithub: 'https://github.com/thanhvanvu/Fuel-Quote-Project',
+    projectTechnologies: 'HTML, CSS, ReactJS, NodeJS, ExpressJS, MongoDB.',
     projectDate: 'March 2022 - May 2022',
     projectImage: [
       {
@@ -225,6 +238,10 @@ const Project = () => {
                         </div>
                         <div className="text">
                           <p>{project.projectDes}</p>
+                        </div>
+
+                        <div className="readmore">
+                          <p>Read more...</p>
                         </div>
                       </div>
                     </li>
