@@ -46,6 +46,48 @@ export interface IProjectList {
 
 const projectList: IProjectList[] = [
   {
+    projectLogo: bookStore,
+    projectName: "Book Store",
+    projectDes:
+      "The book store project is a platform where users can browse and order books. With a wide range of books available for exploration...",
+    projectFullDes:
+      "The book store project offers users the ability to explore and purchase books effortlessly. Featuring an extensive book selection and a smooth ordering process, the project strives to deliver a comprehensive and user-centric book shopping journey.",
+    projectGithub: "https://github.com/thanhvanvu/book-store-fe",
+    projectTechnologies:
+      "HTML5, SCSS (Sass), Javascript, ReactJS, Vite, Ant Design, Redux Toolkit, NestJS, MongoDB.",
+    projectDemo: "https://www.bookstore.works/",
+    projectDate: "Apr 2023 - Jan 2024",
+    projectImage: [
+      {
+        original: bookstore1,
+        thumbnail: bookstore1,
+      },
+      {
+        original: bookstore2,
+        thumbnail: bookstore2,
+      },
+      {
+        original: bookstore3,
+        thumbnail: bookstore3,
+      },
+      {
+        original: bookstore4,
+        thumbnail: bookstore4,
+      },
+      {
+        original: bookstore5,
+        thumbnail: bookstore5,
+      },
+    ],
+    projectBulletPoint: [
+      "Designed and developed a dynamic e-commerce web application showcasing a variety of books, allowing users to sort, add to cart, and make purchases.",
+      "Improved React app performance by 30% with Vite and streamlined the UI using Ant Design.",
+      "Enhanced security and user convenience by implementing access tokens and refresh token functionality.",
+      "Designed and implemented a secure login and register page, ensuring user data privacy and seamless onboarding.",
+      "Created a protected page to secure the administration panel and order history, ensuring unauthorized access is restricted to logged-in users only.",
+    ],
+  },
+  {
     projectLogo: healthCare,
     projectName: "HealthCare Consultancy",
     projectDes:
@@ -103,48 +145,7 @@ const projectList: IProjectList[] = [
       "Utilized ORM (Object Relational Mapping) techniques for efficient data management, further enhancing system efficiency.",
     ],
   },
-  {
-    projectLogo: bookStore,
-    projectName: "Book Store",
-    projectDes:
-      "The book store project is a platform where users can browse and order books. With a wide range of books available for exploration...",
-    projectFullDes:
-      "The book store project offers users the ability to explore and purchase books effortlessly. Featuring an extensive book selection and a smooth ordering process, the project strives to deliver a comprehensive and user-centric book shopping journey.",
-    projectGithub: "https://github.com/thanhvanvu/book-store-fe",
-    projectTechnologies:
-      "HTML5, SCSS (Sass), Javascript, ReactJS, Vite, Ant Design, Redux Toolkit, NestJS, MongoDB.",
-    projectDemo: "https://www.bookstore.works/",
-    projectDate: "Apr 2023 - Jan 2024",
-    projectImage: [
-      {
-        original: bookstore1,
-        thumbnail: bookstore1,
-      },
-      {
-        original: bookstore2,
-        thumbnail: bookstore2,
-      },
-      {
-        original: bookstore3,
-        thumbnail: bookstore3,
-      },
-      {
-        original: bookstore4,
-        thumbnail: bookstore4,
-      },
-      {
-        original: bookstore5,
-        thumbnail: bookstore5,
-      },
-    ],
-    projectBulletPoint: [
-      "Designed and developed a dynamic e-commerce web application showcasing a variety of books, allowing users to sort, add to cart, and make purchases.",
-      "Improved React app performance by 30% with Vite and streamlined the UI using Ant Design.",
-      "Enhanced security and user convenience by implementing access tokens and refresh token functionality.",
-      "Designed and implemented a secure login and register page, ensuring user data privacy and seamless onboarding.",
-      "Created a protected page to secure the administration panel and order history, ensuring unauthorized access is restricted to logged-in users only.",
-    ],
-  },
+
   {
     projectLogo: rou,
     projectName: "Fuel Quote",
